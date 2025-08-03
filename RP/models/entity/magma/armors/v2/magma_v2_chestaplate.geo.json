@@ -1,0 +1,60 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.magma_v2_chestaplate",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0],
+					"binding": "'body'",
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1.01, "uv": [0, 39]},
+						{"origin": [-4.6, 21.2, -4.6], "size": [4, 2, 5], "pivot": [-3.6, 21.2, -1.6], "rotation": [88.67807, 7.88845, -69.74468], "uv": [1, 3]},
+						{"origin": [0.6, 21.2, -4.6], "size": [4, 2, 5], "pivot": [3.6, 21.2, -1.6], "rotation": [88.67807, -7.88845, 69.74468], "uv": [1, 3], "mirror": true}
+					]
+				},
+				{
+					"name": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "arm_plate_right",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [-3, 25, -2.4], "size": [4, 2, 4.46667], "inflate": 1, "pivot": [7, 4, -0.4], "rotation": [0, 0, -17.5], "uv": [1, 17]},
+						{"origin": [-13.6, 20.8, -2], "size": [2, 2, 3.46667], "inflate": 1, "pivot": [-4.6, -1.2, 0], "rotation": [0, 0, 2.5], "uv": [18, 16]},
+						{"origin": [-7.1, 17.1, -1.9], "size": [4, 4, 3.46667], "inflate": 1, "pivot": [2.9, -1.9, -0.9], "rotation": [0, 0, -2.5], "uv": [32, 26]}
+					]
+				},
+				{
+					"name": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "arm_plate_left",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0],
+					"cubes": [
+						{"origin": [-1, 25, -2.4], "size": [4, 2, 4.46667], "inflate": 1, "pivot": [-7, 4, -0.4], "rotation": [0, 0, 17.5], "uv": [1, 17], "mirror": true},
+						{"origin": [11.6, 20.8, -2], "size": [2, 2, 3.46667], "inflate": 1, "pivot": [4.6, -1.2, 0], "rotation": [0, 0, -2.5], "uv": [18, 16], "mirror": true},
+						{"origin": [3.1, 17.1, -1.9], "size": [4, 4, 3.46667], "inflate": 1, "pivot": [-2.9, -1.9, -0.9], "rotation": [0, 0, 2.5], "uv": [32, 26], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

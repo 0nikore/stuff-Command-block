@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.quartz_chestaplate",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0],
+					"binding": "'body'",
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1.01, "uv": [0, 48]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "waist",
+					"pivot": [-5, 23, 0],
+					"rotation": [0, 0, 15]
+				},
+				{
+					"name": "arm_plate_right",
+					"parent": "rightArm",
+					"pivot": [0, 13, 0],
+					"cubes": [
+						{"origin": [7.5, 58.6, -2], "size": [3, 2, 4.2], "inflate": 1, "pivot": [17.5, 34.6, 0.2], "rotation": [0, 0, -96], "uv": [0, 39], "mirror": true}
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "waist",
+					"pivot": [5, 22.9, 0],
+					"rotation": [0, 0, -15]
+				},
+				{
+					"name": "arm_plate_left",
+					"parent": "leftArm",
+					"pivot": [0.02588, 12.99659, 0],
+					"cubes": [
+						{"origin": [-10.47412, 58.59659, -2], "size": [3, 2, 4.2], "inflate": 1, "pivot": [-17.47412, 34.59659, 0.2], "rotation": [0, 0, 96], "uv": [0, 39]}
+					]
+				}
+			]
+		}
+	]
+}

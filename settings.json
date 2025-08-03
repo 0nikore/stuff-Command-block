@@ -1,0 +1,15 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*",
+        "isShellCommand": true,
+        "cmd": "${workspaceFolder}/atualizar_addon.sh",
+        "runIn": "terminal",
+        "name": "Atualizar addon",
+        "runOn": "save",
+        "condition": "${workspaceFolder}/BP/manifest.json && ${workspaceFolder}/RP/manifest.json"
+      }
+    ]
+  }
+}

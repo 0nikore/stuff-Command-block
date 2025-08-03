@@ -1,0 +1,202 @@
+{
+	"resource_pack_name": "ExtremeArmor",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"item_amethyst_helmet": {
+			"textures": "textures/items/amethyst/armor/item_amethyst_helmet"
+		},
+		"item_copper_helmet": {
+			"textures": "textures/items/copper/armor/item_copper_helmet"
+		},
+		"item_magma_helmet": {
+			"textures": "textures/items/magma/armor/v2/item_magma_helmet"
+		},
+		"item_obsidian_helmet": {
+			"textures": "textures/items/obsidian/armor/item_obsidian_helmet"
+		},
+		"item_quartz_helmet": {
+			"textures":"textures/items/quartz/armor/item_quartz_helmet"
+		},
+		"item_amethyst_chestplate": {
+			"textures": "textures/items/amethyst/armor/item_amethyst_chestaplate"
+		},
+		"item_copper_chestplate": {
+			"textures": "textures/items/copper/armor/item_copper_chestaplate"
+		},
+		"item_magma_chestplate":{
+			"textures": "textures/items/magma/armor/v2/item_magma_chestaplate"
+		},
+		"item_obsidian_chestplate": {
+			"textures": "textures/items/obsidian/armor/item_obsidian_chestaplate"
+		},
+		"item_quartz_chestplate": {
+			"textures": "textures/items/quartz/armor/item_quartz_chestplate"
+		},
+		"item_amethyst_leggings": {
+			"textures": "textures/items/amethyst/armor/item_amethyst_leggings"
+		},
+		"item_copper_leggings": {
+			"textures": "textures/items/copper/armor/item_copper_leggings"
+		},
+		"item_magma_leggings": {
+			"textures": "textures/items/magma/armor/v2/item_magma_leggings"
+		},
+		"item_obsidian_leggings": {
+			"textures": "textures/items/obsidian/armor/item_obsidian_leggings"
+		},
+		"item_quartz_leggings": {
+			"textures": "textures/items/quartz/armor/item_quartz_leggings"
+		},
+		"item_amethyst_boots": {
+			"textures": "textures/items/amethyst/armor/item_amethyst_boots"
+		},
+		"item_copper_boots": {
+			"textures": "textures/items/copper/armor/item_copper_boots"
+		},
+		"item_magma_boots": {
+			"textures": "textures/items/magma/armor/v2/item_magma_boots"
+		},
+		"item_obsidian_boots": {
+			"textures": "textures/items/obsidian/armor/item_obsidian_boots"
+		},
+		"item_quartz_boots": {
+			"textures": "textures/items/quartz/armor/item_quartz_boots"
+		},
+		
+
+
+
+		"item_amethyst_helmet_v2": {
+			"textures": "textures/items/amethyst/armor/v2/item_amethyst_helmet_v2"
+		},
+		"item_copper_helmet_v2": {
+			"textures": "textures/items/copper/armor/v2/item_copper_helmet_v2"
+		},
+		"item_obsidian_helmet_v2": {
+			"textures": "textures/items/obsidian/armor/v2/item_obsidian_helmet_v2"
+		},
+		"item_quartz_helmet_v2": {
+			"textures": "textures/items/quartz/armor/v2/item_quartz_helmet_v2"
+		},
+		"item_amethyst_chestplate_v2": {
+			"textures": "textures/items/amethyst/armor/v2/item_amethyst_chestaplate_v2"
+		},
+		"item_copper_chestplate_v2": {
+			"textures": "textures/items/copper/armor/v2/item_copper_chestplate_v2"
+		},
+		"item_obsidian_chestplate_v2": {
+			"textures": "textures/items/obsidian/armor/v2/item_obsidian_chestplate_v2"
+		},
+		"item_quartz_chestplate_v2": {
+			"textures": "textures/items/quartz/armor/v2/item_quartz_chestplate_v2"
+		},
+		"item_amethyst_leggings_v2": {
+			"textures": "textures/items/amethyst/armor/v2/item_amethyst_leggings_v2"
+		},
+		"item_copper_leggings_v2": {
+			"textures": "textures/items/copper/armor/v2/item_copper_leggings_v2"
+		},
+		"item_obsidian_leggings_v2": {
+			"textures": "textures/items/obsidian/armor/v2/item_obsidian_leggings_v2"
+		},
+		"item_quartz_leggings_v2": {
+			"textures": "textures/items/quartz/armor/v2/item_quartz_leggings_v2"
+		},
+		"item_amethst_boots_v2": {
+			"textures": "textures/items/amethyst/armor/v2/item_amethyst_boots_v2"
+		},
+		"item_copper_boots_v2": {
+			"textures": "textures/items/copper/armor/v2/item_copper_boots_v2"
+		},
+		"item_obsidian_boots_v2": {
+			"textures": "textures/items/obsidian/armor/v2/item_obsidian_boots_v2"
+		},
+		"item_quartz_boots_v2": {
+			"textures": "textures/items/quartz/armor/v2/item_quartz_boots_v2"
+		},
+
+
+
+		"sword_amethyst": {
+			"textures": "textures/items/amethyst/tools/sword_amethyst"
+		},
+		"sword_excalibur": {
+			"textures": "textures/items/quartz/tools/sword_excalibur"
+		},
+		"sword_copper": {
+			"textures": "textures/items/copper/tools/sword_copper"
+		},
+		"sword_magma": {
+			"textures": "textures/items/magma/tools/sword_magma"
+		},
+		"sword_obsidian": {
+			"textures": "textures/items/obsidian/tools/sword_obsidian"
+		},
+		"sword_quartz": {
+			"textures": "textures/items/quartz/tools/sword_quartz" 
+		},
+		"pickaxe_amethyst": {
+			"textures": "textures/items/amethyst/tools/pickaxe_amethyst"
+		},
+		"pickaxe_copper": {
+			"textures": "textures/items/copper/tools/pickaxe_copper"
+		},
+		"pickaxe_magma": {
+			"textures": "textures/items/magma/tools/pickaxe_magma"
+		},
+		"pickaxe_obsidian": {
+			"textures": "textures/items/obsidian/tools/pickaxe_obsidian"
+		},
+		"pickaxe_quartz": {
+			"textures": "textures/items/quartz/tools/pickaxe_quartz"
+		},
+		"axe_amethyst": {
+			"textures": "textures/items/amethyst/tools/axe_amethyst"
+		},
+		"axe_copper": {
+			"textures": "textures/items/copper/tools/axe_copper"
+		},
+		"axe_magma": {
+			"textures": "textures/items/magma/tools/axe_magma"
+		},
+		"axe_obsidian": {
+			"textures": "textures/items/obsidian/tools/axe_obsidian"
+		},
+		"axe_quartz": {
+			"textures": "textures/items/quartz/tools/axe_quartz"
+		},
+		"hoe_amethyst": {
+			"textures": "textures/items/amethyst/tools/hoe_amethyst"
+		},
+		"hoe_copper": {
+			"textures": "textures/items/copper/tools/hoe_copper"
+		},
+		"hoe_magma": {
+			"textures": "textures/items/magma/tools/hoe_magma"
+		},
+		"hoe_obsidian": {
+			"textures": "textures/items/obsidian/tools/hoe_obsidian"
+		},
+		"hoe_quartz": {
+			"textures": "textures/items/quartz/tools/hoe_quartz"
+		},
+		"shovel_amethyst": {
+			"textures": "textures/items/amethyst/tools/shovel_amethyst"
+		},
+		"shovel_copper": {
+			"textures": "textures/items/copper/tools/shovel_copper"
+		},
+		"shovel_magma": {
+			"textures": "textures/items/magma/tools/shovel_magma"
+		},
+		"shovel_obsidian": {
+			"textures": "textures/items/obsidian/tools/shovel_obsidian"
+		},
+		"shovel_quartz": {
+			"textures": "textures/items/quartz/tools/shovel_quartz"
+		},
+		"totem_amethyst": {
+			"textures": "textures/items/amethyst/tools/totem_amethyst"
+		}
+	}
+}

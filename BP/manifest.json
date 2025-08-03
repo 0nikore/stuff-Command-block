@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"header": {
+	  "name": "Commander block Staff  bp [1.0]",
+	  "description": "by 0Wither: ✧ command block",
+	  "min_engine_version": [1, 21, 70],
+	  "uuid": "e604e752-ec5e-40e6-b221-b8bf85bd45b8",
+	  "version": [1, 0, 0]
+	},
+	"modules": [
+	  {
+		"type": "data",
+		"uuid": "b9314c16-46f1-4cc8-b564-3351d83046c4",
+		"version": [1, 0, 0]
+	  },
+	  {
+		"type": "script",
+		"language": "javascript",
+		"uuid": "4627b4fb-aeda-426d-a5c4-d6bde6d53b11",
+		"entry": "scripts/main.js",
+		"version": [1, 0, 0]
+	  }
+	],
+	"dependencies": [
+	  {
+		"module_name": "@minecraft/server",
+		"version": "1.14.0"
+	  },
+	  {
+		"module_name": "@minecraft/server-ui",
+		"version": "1.0.0"
+	  }
+	],
+	"capabilities": [
+	  "script_eval"
+	],
+	"metadata": {
+     "authors": [
+	  "0wither"
+        ],
+        "product_type": "addon"
+    }
+}
+  

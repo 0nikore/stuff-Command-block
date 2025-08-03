@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "command block staff rp [1.0]",
+		"description":  "✧ New Armors for your exploration journey ;3",
+		"min_engine_version": [
+			1,
+			21,
+			70
+		],
+		"uuid": "47eaf823-f701-4178-bbaa-7d81122743a9",
+		"version": [
+			1,
+			0,
+			0	
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "b9575786-dc52-4915-8d73-438009ce6577",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "e604e752-ec5e-40e6-b221-b8bf85bd45b8",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"authors": [
+			"0wither"
+		]
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.quartz_v2_helmet",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "helmet",
+					"parent": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-4, -0.9, -4], "size": [8, 8, 8], "inflate": 1, "uv": [46, 112]}
+					]
+				}
+			]
+		}
+	]
+}

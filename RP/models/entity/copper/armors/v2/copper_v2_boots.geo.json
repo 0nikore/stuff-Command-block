@@ -1,0 +1,55 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.copper_v2_boots",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0],
+					"binding": "'body'"
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "Legging_RightLeg",
+					"parent": "leftLeg",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{"origin": [-3.3, 0.3, -2], "size": [2.6, 2, 4], "inflate": 1, "pivot": [0, 0.3, 0], "rotation": [0, -180, 0], "uv": [52, 58], "mirror": true},
+						{"origin": [4.1, 0.2, -8.1], "size": [1.6, 1, 1], "inflate": 1, "pivot": [3.4, 0.2, -5.1], "rotation": [0, 180, 0], "uv": [60, 55]}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "Legging_LeftLeg",
+					"parent": "rightLeg",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{"origin": [0.7, 0.3, -2], "size": [2.6, 2, 4], "inflate": 1, "pivot": [0, 0.3, 0], "rotation": [0, 180, 0], "uv": [52, 58]},
+						{"origin": [0.1, 0.2, -8.1], "size": [1.6, 1, 1], "inflate": 1, "pivot": [-0.6, 0.2, -5.1], "rotation": [0, 180, 0], "uv": [60, 55]}
+					]
+				}
+			]
+		}
+	]
+}
