@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "cmd:staff_command_block"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X ",
+      " X ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:dirt"
+      }
+    },
+    "result": {
+      "item": "cmd:staff_command_block"
+    }
+  }
+}

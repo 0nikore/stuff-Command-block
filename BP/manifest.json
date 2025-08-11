@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-	  "name": "Commander block Staff  bp [1.0]",
+	  "name": "Commander block Staff bp [1.0]",
 	  "description": "by 0Wither: ✧ command block",
 	  "min_engine_version": [1, 21, 70],
 	  "uuid": "e604e752-ec5e-40e6-b221-b8bf85bd45b8",
@@ -24,7 +24,7 @@
 	"dependencies": [
 	  {
 		"module_name": "@minecraft/server",
-		"version": "1.19.0"
+		"version": "1.15.0"
 	  },
 	  {
 		"module_name": "@minecraft/server-ui",
