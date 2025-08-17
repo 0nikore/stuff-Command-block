@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gravity_gun.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [67.08183, 56.15561, -73.41629],
+					"position": [-2, 27, 1],
+					"scale": [1.3, 1.4, 1.2]
+				}
+			}
+		},
+		"animation.gravity_gun.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [82.5, 0, 0],
+					"position": [-3.9, 23.4, 0.8]
+				}
+			}
+		},
+		"animation.gravity_gun.item_use": {
+			"loop": true,
+			"animation_length": 0.75,
+			"override_previous_animation": true,
+			"bones": {
+				"root_item": {
+					"rotation": [67.08183, 56.15561, -73.41629],
+					"position": [-2, 27, 1],
+					"scale": [1.3, 1.4, 1.2]
+				},
+				"bone": {
+					"rotation": [15.01365, 2.41476, 0.64743]
+				},
+				"bone3": {
+					"rotation": [12.5, 0, 0]
+				},
+				"bone4": {
+					"rotation": [7.5, 0, 0]
+				},
+				"bone2": {
+					"rotation": [16, 0, 0]
+				}
+			}
+		},
+		"animation.gravity_gun.item_use_tp": {
+			"loop": true,
+			"animation_length": 0.2917,
+			"bones": {
+				"root_item": {
+					"rotation": [97.5, 0, 0],
+					"position": [-3.9, 24.4, 0.8]
+				},
+				"bone": {
+					"rotation": [10, 0, 0]
+				},
+				"bone3": {
+					"rotation": [17.5, 0, 0]
+				},
+				"bone4": {
+					"rotation": [7.5, 0, 0]
+				},
+				"bone2": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		}
+	}
+}

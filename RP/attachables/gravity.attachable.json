@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "cmd:gravity_gun",
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/models/staffs/gravity_gun",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.gravity_gun"
+			},
+			"animations": {
+				"first_person_hold": "animation.gravity_gun.first_person_hold",
+				"third_person_hold": "animation.gravity_gun.third_person_hold",
+				"first_person_use": "animation.gravity_gun.item_use",
+				"third_person_use": "animation.gravity_gun.item_use_tp"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person && !query.is_using_item"
+					},
+					{
+						"third_person_hold": "!c.is_first_person && !query.is_using_item"
+					},
+					{
+						"first_person_use": "query.is_using_item && c.is_first_person"
+					},
+					{
+						"third_person_use": "query.is_using_item && !c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

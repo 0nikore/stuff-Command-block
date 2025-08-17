@@ -5,7 +5,7 @@
 	  "description": "by 0Wither: ✧ command block",
 	  "min_engine_version": [1, 21, 70],
 	  "uuid": "e604e752-ec5e-40e6-b221-b8bf85bd45b8",
-	  "version": [1, 0, 0]
+	  "version": [1, 0, 1]
 	},
 	"modules": [
 	  {
@@ -16,7 +16,7 @@
 	  {
 		"type": "script",
 		"language": "javascript",
-		"uuid": "4627b4fb-aeda-426d-a5c4-d6bde6d53b11",
+		"uuid": "f9f6a1a0-3ecc-434d-b4b1-ef2c9203ae3d",
 		"entry": "scripts/main.js",
 		"version": [1, 0, 0]
 	  }
@@ -24,7 +24,7 @@
 	"dependencies": [
 	  {
 		"module_name": "@minecraft/server",
-		"version": "1.15.0"
+		"version": "1.14.0"
 	  },
 	  {
 		"module_name": "@minecraft/server-ui",

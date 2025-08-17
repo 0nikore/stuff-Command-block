@@ -1,8 +1,10 @@
 import { world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { staffs } from "./registerItem.js"; // seu arquivo com cajados e skills
+import { staffs } from "./registerStaff.js";
 import { skills } from "./powers/skill-base.js";
-import { absorverMob } from "./powers/skills/absorverMob.js";
+import { registerStop } from "./powers/skill-base.js";
+
+
 
 // Guarda estado do jogador { playerName: { staffId: { skillIndex, desbloqueios } } }
 const playerState = {};
@@ -13,7 +15,7 @@ function getPlayerState(player, staffId) {
     const staff = staffs.find(s => s.id === staffId);
     playerState[player.name][staffId] = {
       skillIndex: 0,
-      desbloqueios: staff.skillList.map((_, i) => i === 1), // desbloqueia só a 1ª skill
+      desbloqueios: staff.skillList.map((_, i) => i <= 7), // desbloqueia 0, pode mudar pra <=1 se quiser 0 e 1
       favoritos: [] // array de índices das skills favoritas
     };
   }
@@ -36,7 +38,7 @@ function executarSkill(player, staff) {
 world.afterEvents.itemUse.subscribe(event => {
   const { source: player, itemStack } = event;
 
-  
+
   if (!player || !itemStack) return;
 
   const staff = staffs.find(s => s.id === itemStack.typeId);
@@ -59,10 +61,24 @@ world.afterEvents.itemStopUse.subscribe(event => {
   // Só se for um staff (cajado)
   const staff = staffs.find(s => s.id === itemStack.typeId);
   if (!staff) return;
-
-  // Para a skill absorverMob ou qualquer skill que use hold
-  absorverMob.stop(player.id);
+  //stop system
+  const stopFunc = registerStop.get(player.id);
+  if (typeof stopFunc === "function") {
+    stopFunc();
+  }
 });
+
+
+// Quando o jogador sai do mundo
+world.afterEvents.playerLeave.subscribe(event => {
+    const playerId = event.playerId; // Aqui é só o ID, o objeto Player já não existe
+
+    const stopFunc = registerStop.get(playerId);
+    if (typeof stopFunc === "function") {
+        stopFunc();
+    }
+});
+
 
 export function desbloquearSkill(player, staffId, skillId) {
   const estado = getPlayerState(player, staffId);
@@ -83,13 +99,21 @@ function abrirMenucategorys(player, staff) {
     .title(`§6${staff.name} - categories`)
     .body("Escolha uma category:");
 
-  const categories = ["Favorites", "Effects", "Summon", "Skills"];
-  categories.forEach(cat => form.button(`§b${cat}`));
+  const categories = [
+    { name: "Favorites", icon: "textures/ui/star" },
+    { name: "Effects", icon: "textures/items/potion" },
+    { name: "Summon", icon: "textures/items/spawn_egg" },
+    { name: "Skills", icon: "textures/items/book" }
+  ];
+
+  categories.forEach(cat => form.button(`§b${cat.name}`, cat.icon));
+
 
   form.show(player).then(response => {
     if (response.canceled) return;
     const categorySelecionada = categories[response.selection];
-    abrirMenuSubSkills(player, staff, categorySelecionada);
+    abrirMenuSubSkills(player, staff, categorySelecionada.name);
+
   });
 }
 
@@ -113,28 +137,24 @@ function abrirMenuSubSkills(player, staff, category) {
   } else {
     skillsFiltradas = staff.skillList
       .map((skill, i) => ({ skill, index: i }))
-      .filter(obj => obj.skill.category === category);
+      .filter(obj => obj.skill.category === category); // category agora é "Skills"
+
   }
 
   // Ordenar para mostrar desbloqueadas primeiro
   skillsFiltradas.sort((a, b) => {
-    const aBloqueada = estado.desbloqueios[a.index] ? 0 : 1; // desbloqueado = 0, bloqueado = 1
+    const aBloqueada = estado.desbloqueios[a.index] ? 0 : 1;
     const bBloqueada = estado.desbloqueios[b.index] ? 0 : 1;
     return aBloqueada - bBloqueada;
   });
 
   skillsFiltradas.forEach(({ skill, index }) => {
     const desbloqueado = estado.desbloqueios[index];
-    const corNome = desbloqueado ? "§f" : "§m"; 
-    const textoBotao = `${corNome}${skill.name}`;
-    const icon = desbloqueado
-        ? "textures/items/command_block" // desbloqueada
-        : "textures/ui/lock" // bloqueada
+    let textoBotao = `§f${skill.name}`;
+    if (!desbloqueado) textoBotao += "\n§clocked"; // adiciona "locked" embaixo
 
-    form.button(textoBotao, icon);
-});
-
-
+    form.button(textoBotao); // sem ícone para skills desbloqueadas
+  });
 
   form.show(player).then(response => {
     if (response.canceled) return;
@@ -149,4 +169,3 @@ function abrirMenuSubSkills(player, staff, category) {
     player.sendMessage(`§aSkill selecionada: ${staff.skillList[index].name}`);
   });
 }
-

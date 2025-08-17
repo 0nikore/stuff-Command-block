@@ -2,26 +2,26 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "cmd:staff_command_block"
+    "identifier": "cmd:staff_copper_power"
     },
 
     
     "tags": [ "crafting_table" ],
     "pattern": [
       " X ",
-      " X ",
-      " # "
+      " # ",
+      "   "
     ],
     "key": {
       "#": {
-        "item": "minecraft:stick"
+        "item": "cmd:staff_copper"
       },
       "X": {
         "item": "minecraft:dirt"
       }
     },
     "result": {
-      "item": "cmd:staff_command_block"
+      "item": "cmd:staff_copper_power"
     }
   }
 }

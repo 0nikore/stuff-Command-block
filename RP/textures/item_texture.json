@@ -2,8 +2,11 @@
 	"resource_pack_name": "ExtremeArmor",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"item_staff_command_block": {
-			"textures": "textures/items/command_block"
+		"item_staff_copper": {
+			"textures": "textures/items/copper/staff_copper"
+		},
+		"item_staff_copper_power": {
+			"textures": "textures/items/copper/staff_copper_power"
 		}
 	}
 }

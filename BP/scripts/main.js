@@ -1,6 +1,4 @@
 import { world, Player, system } from "@minecraft/server";
-
-
 import { desbloquearSkill } from "./baseStaff"
 
 world.afterEvents.entityDie.subscribe((event) => {
@@ -18,7 +16,11 @@ world.afterEvents.entityDie.subscribe((event) => {
   desbloquearSkill(killer, "cmd:staff_command_block", "AbsorverMob");
 
 });
-
+world.beforeEvents.explosion.subscribe((event) => {
+  const entity = event.source;
+  if (entity?.typeId == "minecraft:creeper")
+    event.setImpactedBlocks([]);
+})
 
 
 

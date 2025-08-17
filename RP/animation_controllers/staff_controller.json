@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.staffs.item_use": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "using": "query.get_equipped_item_name == 'cmd:staff_copper_power' && c.is_first_person" }
+                    ]
+                },
+                "using": {
+                    "animations": ["animation.staffs.item_use"],
+                    "transitions": [
+                        { "using": "!query.is_using_item || !c.is_first_person"}
+                    ]
+                }
+            }
+        }
+    }
+}
